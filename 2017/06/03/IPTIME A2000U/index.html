@@ -3,15 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Arxiu: 2017 | Connecting My Life</title>
+    <title>Connecting My Life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="IPTIME A2000U RASPBERRY PI3 사용하기라즈베리파이3를 통해 RDP 클라이언트를 구성하려고 했으나 2.4Ghz 와이파이로 사용할 수 없어 별도의 5Ghz 와이파이 모듈을 사용하기로 했습니다.  국내 아이피타임 A2000U 모델의 경우 rtl8812au 칩셋을 사용하고, 802.11ac를 지원합니다. 무난한 성능에도 불구하고 기본적으로 라즈">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Connecting My Life">
-<meta property="og:url" content="https://pandora0667.github.io/archives/2017/index.html">
+<meta property="og:url" content="https://pandora0667.github.io/2017/06/03/IPTIME A2000U/index.html">
 <meta property="og:site_name" content="Connecting My Life">
+<meta property="og:description" content="IPTIME A2000U RASPBERRY PI3 사용하기라즈베리파이3를 통해 RDP 클라이언트를 구성하려고 했으나 2.4Ghz 와이파이로 사용할 수 없어 별도의 5Ghz 와이파이 모듈을 사용하기로 했습니다.  국내 아이피타임 A2000U 모델의 경우 rtl8812au 칩셋을 사용하고, 802.11ac를 지원합니다. 무난한 성능에도 불구하고 기본적으로 라즈">
+<meta property="og:image" content="https://www.raspberrypi.org/app/uploads/2016/02/Raspberry-Pi-3-top-down-web.jpg">
+<meta property="og:updated_time" content="2017-06-02T15:45:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Connecting My Life">
+<meta name="twitter:description" content="IPTIME A2000U RASPBERRY PI3 사용하기라즈베리파이3를 통해 RDP 클라이언트를 구성하려고 했으나 2.4Ghz 와이파이로 사용할 수 없어 별도의 5Ghz 와이파이 모듈을 사용하기로 했습니다.  국내 아이피타임 A2000U 모델의 경우 rtl8812au 칩셋을 사용하고, 802.11ac를 지원합니다. 무난한 성능에도 불구하고 기본적으로 라즈">
+<meta name="twitter:image" content="https://www.raspberrypi.org/app/uploads/2016/02/Raspberry-Pi-3-top-down-web.jpg">
     
 
     
@@ -121,116 +129,121 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Arxiu: 2017
+    Sense categoria
     </h1>
 </div>
                         <div class="main-body-content">
-                            
+                            <article id="post-IPTIME A2000U" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/06/03/IPTIME A2000U/" class="article-date">
+            <time datetime="2017-06-02T15:45:38.000Z" itemprop="datePublished">2017-06-03</time>
+        </a>
+    </div>
 
-    
-    
-        
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
+                
             </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
         
-        <a href="/2017/06/03/IPTIME A2000U/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://www.raspberrypi.org/app/uploads/2016/02/Raspberry-Pi-3-top-down-web.jpg)" alt="" class="thumbnail-image"></span>
-    
-    
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://pandora0667.github.io/2017/06/03/IPTIME A2000U/">0</span>
-    
-</span>
+        <div class="article-entry" itemprop="articleBody">
+            <h1 id="IPTIME-A2000U-RASPBERRY-PI3-사용하기"><a href="#IPTIME-A2000U-RASPBERRY-PI3-사용하기" class="headerlink" title="IPTIME A2000U RASPBERRY PI3 사용하기"></a>IPTIME A2000U RASPBERRY PI3 사용하기</h1><p>라즈베리파이3를 통해 RDP 클라이언트를 구성하려고 했으나 2.4Ghz 와이파이로 사용할 수 없어 별도의 5Ghz 와이파이 모듈을 사용하기로 했습니다.<br></p>
+<p><img src="https://www.raspberrypi.org/app/uploads/2016/02/Raspberry-Pi-3-top-down-web.jpg" alt="Raspberry pi3"><br><img src="http://contents.iptime.co.kr/~contents/home/a2000u/a2000u_01.jpg" alt="ipTime A2000U"></p>
+<p>국내 아이피타임 A2000U 모델의 경우 rtl8812au 칩셋을 사용하고, 802.11ac를 지원합니다. 무난한 성능에도 불구하고 기본적으로 라즈비안에서는 동작하지 않기 때문에 별도의 방법을 찾아야 했고, 다음과 같은 방법을 공유하고자 합니다. <br><br>칩셋 드라이버는 Github에서 다운받을 수 있으며, 간단한 커널 작업과 컴파일 작업이 필요합니다. 시간이 다소 소요되므로 천천히 작업하시길 바랍니다. </p>
+<h2 id="Compiling-the-driver-step-by-step"><a href="#Compiling-the-driver-step-by-step" class="headerlink" title="Compiling the driver step by step"></a>Compiling the driver step by step</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// 필수 프로그램 설치하기 </div><div class="line">$ sudo apt update &amp;&amp; sudo apt upgrade -y </div><div class="line">$ sudo apt install bc git</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">// 라즈비안 커널 소스 다운  </div><div class="line">$ sudo wget &quot;https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source&quot; -O /usr/bin/rpi-source</div><div class="line">$ sudo chmod 755 /usr/bin/rpi-source </div><div class="line">$ rpi-source</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// rtl8812au 드라이버 다운 및 컴파일 작업 </div><div class="line">$ git clone &quot;https://github.com/gnab/rtl8812au&quot;</div><div class="line">$ cd rtl8812au</div><div class="line">$ sed -i &apos;s/CONFIG_PLATFORM_I386_PC = y/CONFIG_PLATFORM_I386_PC = n/g&apos; Makefile</div><div class="line">$ sed -i &apos;s/CONFIG_PLATFORM_ARM_RPI = n/CONFIG_PLATFORM_ARM_RPI = y/g&apos; Makefile</div><div class="line">$ make</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// 드라이버를 사용하기 위해 복사하기 </div><div class="line">$ sudo cp 8812au.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless</div><div class="line">$ sudo depmod -a</div><div class="line">$ sudo modprobe 8812au</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// 무선랜 디바이스가 정상적으로 잡히는지 확인하기 </div><div class="line">$ sudo reboot </div><div class="line">$ ifconfig </div><div class="line">$ iwconfig</div></pre></td></tr></table></figure>
+<ul>
+<li>raspbian-rtl8812au Ansible <ul>
+<li><a href="https://github.com/layereight/raspbian-rtl8812au.git" target="_blank" rel="external">https://github.com/layereight/raspbian-rtl8812au.git</a></li>
+</ul>
+</li>
+</ul>
 
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2017-06-02T15:45:38.000Z" itemprop="datePublished">2017-06-03</time></div>
         </div>
-        
-        <p class="article-excerpt">
-            IPTIME A2000U RASPBERRY PI3 사용하기라즈베리파이3를 통해 RDP 클라이언트를 구성하려고 했으나 2.4Ghz 와이파이로 사용할 수 없어 별도의 5Ghz 와이파이 모듈을 사용하기로 했습니다.
+        <footer class="article-footer">
+            
 
-국내 아이피타임 A2000U 모델의 경우 rtl8812au 칩셋을 사용하고, 802.11ac를 지원합니다. 무난한 성능에도 불구하고 기본적으로 라즈
-        </p>
+
+
+    <a data-url="https://pandora0667.github.io/2017/06/03/IPTIME A2000U/" data-id="cj3g0vrgh0000lh4uiho0x0gu" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2017/05/14/hello-world/" class="thumbnail">
-    
-    
-        <span style="background-image:url(http://res.heraldm.com/content/image/2012/12/12/20121212000768_1.jpg)" alt="" class="thumbnail-image"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://pandora0667.github.io/2017/05/14/hello-world/">0</span>
-    
-</span>
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2017-05-14T14:02:17.000Z" itemprop="datePublished">2017-05-14</time></div>
-        </div>
-        
-        <p class="article-excerpt">
-            안녕하세요
-깃허브 홈페이지를 처음 오픈하게 되었습니다. 
-
-경력
-
-한밭대학교 정보통신 공학과 3학년 재학   무선통신소프트웨어 연구실(와이소프트) 소속   네트워크,hexo  클라우드, 자바, 노드 등 프로그래밍 기술을 배우고 있습니다. 
-
-부족한것이 많지만…
-블로그는 시간되는데로 꾸준한 개편이 이루워질 계획입니다
-본블로그의 성격은 IT 블로그이기 때문에 
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
+
     
-        </div>
-    
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -267,6 +280,19 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/05/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">antic</strong>
+        <p class="article-nav-title"></p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -383,11 +409,13 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'https://pandora0667.github.io/2017/06/03/IPTIME A2000U/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
